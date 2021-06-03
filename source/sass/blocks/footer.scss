@@ -1,1 +1,81 @@
-
+.footer__headline {
+  color: $darkest-dark;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.footer__next-list-item {
+  color: $darkest-dark;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.footer__contacts-list-link {
+  color: $accent-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+.footer__contacts-list-link--phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+.footer__company-offer-info {
+  color: $darkest-dark;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

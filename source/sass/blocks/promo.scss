@@ -1,0 +1,55 @@
+.promo__headline-wrapper {
+  background-color: $promo-back-blue;
+  background-image: url("../img/promo-back-desktop@1x.jpg");
+
+  @media (resolution: $retina) {
+    background-image: url("../img/promo-back-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/promo-back-tablet@1x.jpg");
+
+    @media (resolution: $retina) {
+      background-image: url("../img/promo-back-tablet@2x.jpg");
+    }
+  }
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/promo-back-mobile@1x.jpg");
+
+    @media (resolution: $retina) {
+      background-image: url("../img/promo-back-mobile@2x.jpg");
+    }
+  }
+}
+.promo__headline {
+  color: $white;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.promo__headline-lead {
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

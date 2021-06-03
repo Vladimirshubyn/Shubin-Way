@@ -18,16 +18,16 @@
         <div class="page__header-logo-wrapper">
           <a class="page__header-logo" href="#">
             <svg class="page__header-logo-image" viewBox="0 0 57 22" width="57" height="22">
-              <use xlink:href=""></use>
+              <use xlink:href="img/sprite.svg#logo-way"></use>
             </svg>
           </a>
         </div>
         <button class="page__header-toggle" type="button" name="button">
           <svg class="page__header-toggle-open" width="75" height="50">
-            <use xlink:href="img/sprite.svg#toggle-open"></use>
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
           <svg class="page__header-toggle-close" width="75" height="50">
-            <use xlink:href="img/sprite.svg#toggle-close"></use>
+            <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
@@ -42,9 +42,17 @@
             </li>
             <li class="main-nav__list-item main-nav__list-item--last">
               <svg class="main-nav__list-item-logo" viewBox="0 0 30 30" width="30" height="30">
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-              <a class="main-nav__list-link" href="tel:+749978468446">+7(499)-784-684-46</a>
+              <a class="main-nav__list-link main-nav__list-link--phone" href="tel:+749978468446">+7(499)-784-684-46</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list-open hidden">
+            <li class="main-nav__list-open-item">
+              <a class="main-nav__list-open-link" href="#journey">О путешествии</a>
+            </li>
+            <li class="main-nav__list-open-item">
+              <a class="main-nav__list-open-link" href="#prices">Цены</a>
             </li>
           </ul>
         </nav>
@@ -53,10 +61,10 @@
           <div class="promo__headline-wrapper">
             <h3 class="promo__headline">Путешествие по Европе</h3>
             <p class="promo__headline-lead">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <a class="promo__headline-button button" href="#tabs">
+            <a class="promo__headline-button button" href="#">
               <p class="promo__headline-button-text">Cмотреть тур</p>
               <svg class="promo__headline-button-icon" viewBox="0 0 14 14" width="14" height="14">
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </div>
@@ -69,48 +77,73 @@
 
       <div class="page__main-wrapper">
         <section class="places">
-          <div class="places__header-wrapper">
+          <div class="places__headline-wrapper">
             <h2 class=visually-hidden>Информация о турах</h2>
-            <h3 class="promo__headline">Места посещения</h3>
-            <p class="promo__headline-lead">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+            <h3 class="places__headline">Места посещения</h3>
+            <p class="places__headline-lead">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           </div>
           <ul class="places__list">
             <li class="places__list-item">
               <a class="places__list-link" href="#">
-                <picture class="places__list-link-picture">
-                  <source src="https://" type="video/">
+                <picture>
+                  <source type="image/webp" media="(max-width: 320px)" srcset="img/content/greece-mobile@1x.webp 1x, img/content/greece-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/greece-tablet@1x.webp 1x, img/content/greece-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/greece-desktop@1x.webp 1x, img/content/greece-desktop@2x.webp 2x">
+                  <source media="(max-width: 320px)" srcset="img/content/greece-mobile@1x.jpg, img/content/greece-mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="img/content/greece-tablet@1x.jpg, img/content/greece-tablet@2x.jpg 2x">
+                  <img src="img/content/greece-desktop@1x.jpg" srcset="img/content/greece-desktop@2x.jpg 2x" alt="Фото Греции">
                 </picture>
                 <p class="places__list-link-title">Греция</p>
               </a>
             </li>
             <li class="places__list-item">
               <a class="places__list-link" href="#">
-                <picture class="places__list-link-picture">
-                  <source src="https://" type="video/">
+                <picture>
+                  <source type="image/webp" media="(max-width: 320px)" srcset="img/content/albania-mobile@1x.webp 1x, img/content/albania-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/albania-tablet@1x.webp 1x, img/content/albania-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/albania-desktop@1x.webp 1x, img/content/albania-desktop@2x.webp 2x">
+                  <source media="(max-width: 320px)" srcset="img/content/albania-mobile@1x.jpg, img/content/albania-mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="img/content/albania-tablet@1x.jpg, img/content/albania-tablet@2x.jpg 2x">
+                  <img src="img/content/albania-desktop@1x.jpg" srcset="img/content/albania-desktop@2x.jpg 2x" alt="Фото Албании">
                 </picture>
                 <p class="places__list-link-title">Албания</p>
               </a>
             </li>
             <li class="places__list-item">
               <a class="places__list-link" href="#">
-                <picture class="places__list-link-picture">
-                  <source src="https://" type="video/">
+                <picture>
+                  <source type="image/webp" media="(max-width: 320px)" srcset="img/content/macedonia-mobile@1x.webp 1x, img/content/macedonia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/macedonia-tablet@1x.webp 1x, img/content/macedonia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/macedonia-desktop@1x.webp 1x, img/content/macedonia-desktop@2x.webp 2x">
+                  <source media="(max-width: 320px)" srcset="img/content/macedonia-mobile@1x.jpg, img/content/macedonia-mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="img/content/macedonia-tablet@1x.jpg, img/content/macedonia-tablet@2x.jpg 2x">
+                  <img src="img/content/macedonia-desktop@1x.jpg" srcset="img/content/macedonia-desktop@2x.jpg 2x" alt="Фото Македонии">
                 </picture>
                 <p class="places__list-link-title">Македония</p>
               </a>
             </li>
             <li class="places__list-item">
               <a class="places__list-link" href="#">
-                <picture class="places__list-link-picture">
-                  <source src="https://" type="video/">
+                <picture>
+                  <source type="image/webp" media="(max-width: 320px)" srcset="img/content/montenegro-mobile@1x.webp 1x, img/content/montenegro-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/montenegro-tablet@1x.webp 1x, img/content/montenegro-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/montenegro-desktop@1x.webp 1x, img/content/montenegro-desktop@2x.webp 2x">
+                  <source media="(max-width: 320px)" srcset="img/content/montenegro-mobile@1x.jpg, img/content/montenegro-mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="img/content/montenegro-tablet@1x.jpg, img/content/montenegro-tablet@2x.jpg 2x">
+                  <img src="img/content/montenegro-desktop@1x.jpg" srcset="img/content/montenegro-desktop@2x.jpg 2x" alt="Фото Черногории">
                 </picture>
                 <p class="places__list-link-title">Черногория</p>
               </a>
             </li>
             <li class="places__list-item">
               <a class="places__list-link" href="#">
-                <picture class="places__list-link-picture">
-                  <source src="https://" type="video/">
+                <picture>
+                  <source type="image/webp" media="(max-width: 320px)" srcset="img/content/croatia-mobile@1x.webp 1x, img/content/croatia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 768px)" srcset="img/content/croatia-tablet@1x.webp 1x, img/content/croatia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/croatia-desktop@1x.webp 1x, img/content/croatia-desktop@2x.webp 2x">
+                  <source media="(max-width: 320px)" srcset="img/content/croatia-mobile@1x.jpg, img/content/croatia-mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="img/content/croatia-tablet@1x.jpg, img/content/croatia-tablet@2x.jpg 2x">
+                  <img src="img/content/croatia-desktop@1x.jpg" srcset="img/content/croatia-desktop@2x.jpg 2x" alt="Фото Хорватии">
                 </picture>
                 <p class="places__list-link-title">Хорватия</p>
               </a>
@@ -124,7 +157,7 @@
             <ul class="places-tabs__nav-list">
               <li class="places-tabs__nav-list-item">
                 <a class="places-tabs__nav-list-link" href="#">
-                  <p class="places-tabs__nav-list-link-title">Греция</p>
+                  <p class="places-tabs__nav-list-link-title places-tabs__nav-list-link-title--active">Греция</p>
                 </a>
               </li>
               <li class="places-tabs__nav-list-item">
@@ -150,26 +183,6 @@
             </ul>
           </div>
           <section class="places-tab">
-            <div class="places-tab__greece">
-              <h2 class="visually-hidden">Карточка тура</h2>
-              <div class="places-tab__info">
-                <article class="places-tab__info-description">
-                  <h3 class="places-tab__info-headline">Греция</h3>
-                  <p class="places-tab__info-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                </article>
-                <button class="places-tab__info-button button" type="button" name="button">Купить тур сейчас</button>
-              </div>
-              <div class="places-tab__review">
-                <article class="places-tab__review-description">
-                  <h3 class="places-tab__review-headline">Отзывы</h3>
-                  <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-                  <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
-                  </address>
-                </article>
-              </div>
-            </div>
             <div class="places-tab__wrapper">
               <h2 class="visually-hidden">Карточка тура</h2>
               <div class="places-tab__info">
@@ -184,7 +197,7 @@
                   <h3 class="places-tab__review-headline">Отзывы</h3>
                   <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
+                    <img class="places-tab__review-author-image" src="img/vlada-avatar.png" alt="Аватар автора">
                     <p class="places-tab__review-author">Влада Голицина</p>
                   </address>
                 </article>
@@ -194,18 +207,18 @@
               <h2 class="visually-hidden">Карточка тура</h2>
               <div class="places-tab__info">
                 <article class="places-tab__info-description">
-                  <h3 class="places-tab__info-headline">Греция</h3>
-                  <p class="places-tab__info-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <h3 class="places-tab__info-headline">Албания</h3>
+                  <p class="places-tab__info-text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
                 </article>
                 <button class="places-tab__info-button button" type="button" name="button">Купить тур сейчас</button>
               </div>
               <div class="places-tab__review">
                 <article class="places-tab__review-description">
                   <h3 class="places-tab__review-headline">Отзывы</h3>
-                  <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <p class="places-tab__review-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы &#58;&#41;</p>
                   <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
+                    <img class="places-tab__review-author-image" src="img/marishka-avatar.png" alt="Аватар автора">
+                    <p class="places-tab__review-author">Маришка</p>
                   </address>
                 </article>
               </div>
@@ -214,18 +227,18 @@
               <h2 class="visually-hidden">Карточка тура</h2>
               <div class="places-tab__info">
                 <article class="places-tab__info-description">
-                  <h3 class="places-tab__info-headline">Греция</h3>
-                  <p class="places-tab__info-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <h3 class="places-tab__info-headline">Македония</h3>
+                  <p class="places-tab__info-text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
                 </article>
                 <button class="places-tab__info-button button" type="button" name="button">Купить тур сейчас</button>
               </div>
               <div class="places-tab__review">
                 <article class="places-tab__review-description">
                   <h3 class="places-tab__review-headline">Отзывы</h3>
-                  <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <p class="places-tab__review-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
                   <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
+                    <img class="places-tab__review-author-image" src="img/kuzmin-avatar.png" alt="Аватар автора">
+                    <p class="places-tab__review-author">Михаил Кузьмин</p>
                   </address>
                 </article>
               </div>
@@ -234,18 +247,18 @@
               <h2 class="visually-hidden">Карточка тура</h2>
               <div class="places-tab__info">
                 <article class="places-tab__info-description">
-                  <h3 class="places-tab__info-headline">Греция</h3>
-                  <p class="places-tab__info-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <h3 class="places-tab__info-headline">Черногория</h3>
+                  <p class="places-tab__info-text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
                 </article>
                 <button class="places-tab__info-button button" type="button" name="button">Купить тур сейчас</button>
               </div>
               <div class="places-tab__review">
                 <article class="places-tab__review-description">
                   <h3 class="places-tab__review-headline">Отзывы</h3>
-                  <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <p class="places-tab__review-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах &#58;&#41; Всем советую</p>
                   <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
+                    <img class="places-tab__review-author-image" src="img/mei-avatar.png" alt="Аватар автора">
+                    <p class="places-tab__review-author">Анастасия Мей</p>
                   </address>
                 </article>
               </div>
@@ -254,18 +267,18 @@
               <h2 class="visually-hidden">Карточка тура</h2>
               <div class="places-tab__info">
                 <article class="places-tab__info-description">
-                  <h3 class="places-tab__info-headline">Греция</h3>
-                  <p class="places-tab__info-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <h3 class="places-tab__info-headline">Хорватия</h3>
+                  <p class="places-tab__info-text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
                 </article>
                 <button class="places-tab__info-button button" type="button" name="button">Купить тур сейчас</button>
               </div>
               <div class="places-tab__review">
                 <article class="places-tab__review-description">
                   <h3 class="places-tab__review-headline">Отзывы</h3>
-                  <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <p class="places-tab__review-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу &#58;&#41;</p>
                   <address class="places-tab__review-author">
-                    <img class="places-tab__review-author-image src="#" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
+                    <img class="places-tab__review-author-image" src="img/mulitsin-avatar.png" alt="Аватар автора">
+                    <p class="places-tab__review-author">Владимир Мулицин</p>
                   </address>
                 </article>
               </div>
@@ -279,7 +292,7 @@
             <p class="prices__headline-appeal">Свяжитесь с нами</p>
             <div class="prices__headline-phone">
               <svg class="prices__headline-phone-logo" viewBox="0 0 30 30" width="30" height="30">
-                <use xlink:href=""></use>
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
               <a class="prices__headline-phone-link" href="tel:+749978468446">+7(499)-784-684-46</a>
             </div>
@@ -318,18 +331,19 @@
           <fieldset class="contact__fieldset">
             <legend class="contact__legend">
               <p class="contact__legend-text">У Вас остались вопросы&quest;</p>
+              <p class="contact__legend-lead">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             </legend>
-            <ul class="contact-list">
-              <li class="contact-list__item contact-list__item--phone">
-                <label class="contact-list__label" for="phone">Номер телефона</label>
-                <input class="contact-list__input" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
+            <ul class="contact__list">
+              <li class="contact__list-item contact__list-item--phone">
+                <label class="contact__list-label" for="phone"></label>
+                <input class="contact__list-input" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
               </li>
-              <li class="contact-list__item contact-list__item--email" >
-                <label class="contact-list__label" for="email">Адрес почты</label>
-                <input class="contact-list__input" type="email" id="email" name="email" placeholder="E-mail">
+              <li class="contact__list-item contact__list-item--email" >
+                <label class="contact__list-label" for="email"></label>
+                <input class="contact__list-input" type="email" id="email" name="email" placeholder="E-mail">
               </li>
             </ul>
-            <button class="contact-button button" type="button" name="button">Отправить</button>
+            <button class="contact__button button" type="button" name="button">Отправить</button>
           </fieldset>
         </section>
       </div>
@@ -339,6 +353,7 @@
     <footer class="page__footer footer">
 
       <section class="footer__next">
+        <h3 class="footer__headline">Следующие путешествия</h3>
         <ul class="footer__next-list">
           <li class="footer__next-list-item">Марсель</li>
           <li class="footer__next-list-item">Ним</li>
@@ -362,21 +377,56 @@
         </ul>
       </section>
       <section class="footer__contacts">
+        <h3 class="footer__headline">Наши контакты</h3>
         <ul class="footer__contacts-list">
           <li class="footer__contacts-list-item">
-            <a class="footer__contacts-list-link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+            <a class="footer__contacts-list-link" href="mailto:puteshestviemechta@gmail.ru" target="_blank">puteshestviemechta@gmail.ru</a>
           </li>
           <li class="footer__contacts-list-item">
-            <a class="footer__contacts-list-link" href="tel:+749978468446">+7(499)-784-684-46</a>
+            <a class="footer__contacts-list-link footer__contacts-list-link--phone" href="tel:+749978468446">+7(499)-784-684-46</a>
           </li>
         </ul>
       </section>
       <section class="footer__company-offer">
-        <h3 class="footer__company-offer-headline">Корпоративные путешествия</h3>
+        <h3 class="footer__headline">Корпоративные путешествия</h3>
         <p class="footer__company-offer-info">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
       </section>
 
     </footer>
+
+    <div class="modal modal__purchase hidden">
+      <button class="modal__purchase-toggle" type="button" name="button">
+        <svg class="modal__purchase-toggle-close" width="22" height="22">
+          <use xlink:href=""></use>
+        </svg>
+        <span class="visually-hidden">Закрыть попап</span>
+      </button>
+      <fieldset class="modal__purchase-fieldset">
+        <legend class="modal__purchase-legend">
+          <p class="modal__purchase-legend-text">Купить тур</p>
+        </legend>
+        <ul class="modal__purchase-list">
+          <li class="modal__purchase-list-item modal__purchase-list-item--phone">
+            <label class="modal__purchase-list-label" for="phone"></label>
+            <input class="modal__purchase-list-input" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
+          </li>
+          <li class="modal__purchase-list-item modal__purchase-list-item--email" >
+            <label class="modal__purchase-list-label" for="email"></label>
+            <input class="modal__purchase-list-input" type="email" id="email" name="email" placeholder="E-mail">
+          </li>
+        </ul>
+        <button class="modal__purchase-button button" type="button" name="button">Отправить</button>
+      </fieldset>
+     </div>
+     <div class="modal modal__success hidden">
+       <button class="modal__success-toggle" type="button" name="button">
+         <svg class="modal__success-toggle-close" width="22" height="22">
+           <use xlink:href=""></use>
+         </svg>
+         <span class="visually-hidden">Закрыть попап</span>
+       </button>
+       <p class="modal__success-title">Форма успешно отправлена, спасибо&#33; &#58;&#41;</p>
+     </div>
 
   </body>
 

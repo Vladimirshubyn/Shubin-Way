@@ -1,0 +1,82 @@
+.places-tab__info-headline {
+  color: $dark;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.places-tab__info-text {
+  color: $dark;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+.places-tab__review-headline {
+  color: $dark;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  @media (max-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.places-tab__review-text {
+  color: $dark;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+.places-tab__review-author {
+  color: $dark;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  @media (max-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

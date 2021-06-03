@@ -1,0 +1,48 @@
+.contact__legend-text {
+  color: $darkest-dark;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  @media (max-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+.contact__legend-lead {
+  color: $darkest-dark;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.contact__list-input {
+  color: $darkest-dark;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  @media (max-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
