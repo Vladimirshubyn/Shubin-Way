@@ -1,9 +1,20 @@
+.places {
+  margin-top: 199px;
+  @media (max-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
 .places__headline {
+  position: relative;
+  width: 358px;
   color: $dark;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   @media (max-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    width: 301px;
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
@@ -14,36 +25,179 @@
     line-height: 36px;
   }
 }
+.places__headline::after {
+  content: "";
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 50%;
+  border-bottom: 4px solid $accent-base;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
 .places__headline-lead {
+  width: 328px;
   color: $dark;
   opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   @media (max-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
   @media (max-width: $mobile-width) {
+    text-align: justify;
+    width: 288px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
 }
-.places__list-link-title {
+.places__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  @media (max-width: $tablet-width) {
+    padding-left: 7.743vw;
+    padding-right: 7.743vw;
+  }
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+.places__list-item {
+  width: 18.229vw;
+  @media (max-width: $tablet-width) {
+    width: 37.500vw;
+  }
+  @media (max-width: $mobile-width) {
+    width: 90vw;
+  }
+}
+.places__list-item--first {
+  margin-right: auto;
+  margin-bottom: 5.260vw;
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 19px;
+  }
+}
+.places__list-item--third {
+  margin-left: auto;
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 19px;
+  }
+}
+.places__list-link {
+  position: relative;
+}
+.places__list-link::after {
+  position: absolute;
+  top: -1.979vw;
+  left: 4.088vw;
+  content: "";
+  padding: 0.625vw 3.229vw 0.625vw 3.229vw;
+  background-color: $white;
+  text-align: center;
   color: $dark;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.250vw;
   line-height: 29px;
   @media (max-width: $tablet-width) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    padding: 2.083vw 7.943vw 2.083vw 7.943vw;
+    font-size: 3.125vw;
+    top: -5.679vw;
+    left: 6.288vw;
   }
   @media (max-width: $mobile-width) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+    padding: 5vw 19.063vw 5vw 19.063vw;
+    font-size: 7.500vw;
+    top: -12.679vw;
+    left: 13.288vw;
   }
 }
+.places__list-link--first::after {
+  position: relative;
+  content: "Греция";
+  left: 4.088vw;
+  @media (max-width: $tablet-width) {
+    left: 6.288vw;
+  }
+  @media (max-width: $mobile-width) {
+    left: 0.288vw;
+  }
+}
+.places__list-link--second::after {
+  position: relative;
+  content: "Албания";
+  left: 3.688vw;
+  @media (max-width: $tablet-width) {
+    left: 5.088vw;
+  }
+  @media (max-width: $mobile-width) {
+    left: 12.088vw;
+  }
+}
+.places__list-link--third::after {
+  content: "Македония";
+  left: 3.098vw;
+  @media (max-width: $tablet-width) {
+    left: 3.498vw;
+  }
+  @media (max-width: $mobile-width) {
+    left: 8.088vw;
+  }
+}
+.places__list-link--fourth::after {
+  content: "Черногория";
+  left: 2.698vw;
+  @media (max-width: $tablet-width) {
+    left: 2.898vw;
+  }
+  @media (max-width: $mobile-width) {
+    left: 7.088vw;
+  }
+}
+.places__list-link--fifth::after {
+  content: "Хорватия";
+  left: 3.398vw;
+  @media (max-width: $tablet-width) {
+    left: 4.598vw;
+  }
+  @media (max-width: $mobile-width) {
+    left: 11.088vw;
+  }
+}
+// .places__list-link-title {
+//   background-color: $white;
+//   width: 11.198vw;
+//   margin: 0 auto;
+//   margin-top: -50px;
+//   text-align: center;
+//   color: $dark;
+//   font-weight: 500;
+//   font-size: 24px;
+//   line-height: 29px;
+//   @media (max-width: $tablet-width) {
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 29px;
+//   }
+//   @media (max-width: $mobile-width) {
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 29px;
+//   }
+// }

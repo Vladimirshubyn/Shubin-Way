@@ -1,3 +1,48 @@
 .page {
   background-color: $white;
 }
+.page__body {
+  margin: 0;
+}
+.page__main-wrapper {
+  padding-left: 19.531vw;
+  padding-right: 19.531vw;
+  @media (max-width: $tablet-width) {
+    padding-left: 2.734vw;
+    padding-right: 2.734vw;
+  }
+  @media (max-width: $mobile-width) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+.page__header-wrapper {
+  padding-left: 19.531vw;
+  padding-right: 19.531vw;
+  padding-top: 39px;
+  padding-bottom: 38px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: $tablet-width) {
+    padding-left: 2.734vw;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media (max-width: $mobile-width) {
+    padding-left: 5vw;
+  }
+}
+.page__header-toggle {
+  display: none;
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: $accent-base;
+  }
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
