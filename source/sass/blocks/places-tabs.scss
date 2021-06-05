@@ -1,3 +1,37 @@
+.places-tabs {
+  overflow-x: hidden;
+}
+.places-tabs__nav-list {
+  position: relative;
+  width: 46.823vw;
+  margin-top: 97px;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $tablet-width) {
+    margin-top: 98px;
+    width: 117.057vw;
+    margin-right: 0;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 40px;
+    width: 899px;
+    margin-right: 0;
+  }
+}
+.places-tabs__nav-list::after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  width: 46.823vw;
+  left: 0;
+  border-bottom: 1px solid $dark-opacity;
+  @media (max-width: $tablet-width) {
+    width: 187.057vw;
+  }
+}
 .places-tabs__nav-list-link-title {
   color: $dark;
   opacity: 0.3;

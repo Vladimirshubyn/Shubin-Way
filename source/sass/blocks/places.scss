@@ -23,6 +23,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+    width: 288px;
   }
 }
 .places__headline::after {
@@ -30,7 +31,7 @@
   position: absolute;
   top: 180px;
   left: 0;
-  width: 50%;
+  width: 11.927vw;
   border-bottom: 4px solid $accent-base;
   @media (max-width: $tablet-width) {
     display: none;
@@ -85,6 +86,11 @@
     width: 90vw;
   }
 }
+.places__list-item:not(.places__list-item--first) {
+  @media (max-width: $mobile-width) {
+    margin-top: 35px;
+  }
+}
 .places__list-item--first {
   margin-right: auto;
   margin-bottom: 5.260vw;
@@ -92,12 +98,18 @@
     margin-right: 0;
     margin-bottom: 19px;
   }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+  }
 }
 .places__list-item--third {
   margin-left: auto;
   @media (max-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 19px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
   }
 }
 .places__list-link {
@@ -122,32 +134,29 @@
     left: 6.288vw;
   }
   @media (max-width: $mobile-width) {
-    padding: 5vw 19.063vw 5vw 19.063vw;
-    font-size: 7.500vw;
-    top: -12.679vw;
-    left: 13.288vw;
+    padding: 16px 61px 16px 61px;
+    font-size: 24px;
+    top: -46px;
   }
 }
 .places__list-link--first::after {
-  position: relative;
   content: "Греция";
   left: 4.088vw;
   @media (max-width: $tablet-width) {
     left: 6.288vw;
   }
   @media (max-width: $mobile-width) {
-    left: 0.288vw;
+    left: 46px;
   }
 }
 .places__list-link--second::after {
-  position: relative;
   content: "Албания";
   left: 3.688vw;
   @media (max-width: $tablet-width) {
     left: 5.088vw;
   }
   @media (max-width: $mobile-width) {
-    left: 12.088vw;
+    left: 36px;
   }
 }
 .places__list-link--third::after {
@@ -157,7 +166,7 @@
     left: 3.498vw;
   }
   @media (max-width: $mobile-width) {
-    left: 8.088vw;
+    left: 25px;
   }
 }
 .places__list-link--fourth::after {
@@ -167,7 +176,7 @@
     left: 2.898vw;
   }
   @media (max-width: $mobile-width) {
-    left: 7.088vw;
+    left: 23px;
   }
 }
 .places__list-link--fifth::after {
@@ -177,7 +186,7 @@
     left: 4.598vw;
   }
   @media (max-width: $mobile-width) {
-    left: 11.088vw;
+    left: 36px;
   }
 }
 // .places__list-link-title {

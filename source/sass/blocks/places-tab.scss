@@ -1,9 +1,27 @@
+.places-tab__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 240px;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.places-tab__info {
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
 .places-tab__info-headline {
+  margin-top: 95px;
+  margin-bottom: 0;
+  position: relative;
   color: $dark;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
   @media (max-width: $tablet-width) {
+    margin-top: 35px;
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
@@ -12,6 +30,17 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+  }
+}
+.places-tab__info-headline::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 9.115vw;
+  border-bottom: 4px solid $accent-base;
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 .places-tab__info-text {
@@ -31,7 +60,107 @@
     line-height: 28px;
   }
 }
+.places-tab__info-button {
+  padding: 30px 40px 30px 40px;
+}
+.places-tab__review {
+  z-index: 1;
+  position: relative;
+  margin-left: auto;
+  margin-top: 194px;
+  width: 19.896vw;
+  @media (max-width: $tablet-width) {
+    width: 382px;
+    margin: 0 auto;
+    margin-top: 110px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 268px;
+  }
+}
+.places-tab__review-description {
+  background-color: $white;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.places-tab__review::after {
+  width: 22.396vw;
+  height: 31.042vw;
+  z-index: -1;
+  position: absolute;
+  right: 50%;
+  top: -80px;
+  @media (max-width: $tablet-width) {
+    left: auto;
+    right: 200px;
+    width: 100%;
+    top: -85px;
+  }
+}
+.places-tab__review--greece::after {
+  content: url("../img/tab-greece-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/tab-greece-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    content: url("../img/tab-greece-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/tab-greece-tablet@2x.jpg");
+    }
+  }
+}
+.places-tab__review--albania::after {
+  content: url("../img/tab-albania-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/tab-albania-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    content: url("../img/tab-albania-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/tab-albania-tablet@2x.jpg");
+    }
+  }
+}
+.places-tab__review--macedonia::after {
+  content: url("../img/tab-macedonia-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/tab-macedonia-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    content: url("../img/tab-macedonia-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/tab-macedonia-tablet@2x.jpg");
+    }
+  }
+}
+.places-tab__review--montenegro::after {
+  content: url("../img/tab-montenegro-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/tab-montenegro-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    content: url("../img/tab-montenegro-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/montenegro-tablet@2x.jpg");
+    }
+  }
+}
+.places-tab__review--croatia::after {
+  content: url("../img/tab-croatia-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/tab-croatia-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    content: url("../img/tab-croatia-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/tab-croatia-tablet@2x.jpg");
+    }
+  }
+}
 .places-tab__review-headline {
+  position: relative;
+  margin: 0;
   color: $dark;
   font-weight: 500;
   font-size: 30px;
@@ -45,6 +174,17 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+.places-tab__review-headline::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 3.542vw;
+  border-bottom: 0.7px solid $accent-base;
+  @media (max-width: $tablet-width) {
+
   }
 }
 .places-tab__review-text {
