@@ -316,17 +316,17 @@
         <section class="contact">
           <fieldset class="contact__fieldset">
             <legend class="contact__legend">
-              <p class="contact__legend-text">У Вас остались вопросы&quest;</p>
+              <h3 class="contact__legend-headline">У Вас остались вопросы&quest;</h3>
               <p class="contact__legend-lead">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             </legend>
             <ul class="contact__list">
               <li class="contact__list-item contact__list-item--phone">
                 <label class="contact__list-label" for="phone"></label>
-                <input class="contact__list-input" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
+                <input class="contact__list-input contact__list-input--phone" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
               </li>
               <li class="contact__list-item contact__list-item--email" >
                 <label class="contact__list-label" for="email"></label>
-                <input class="contact__list-input" type="email" id="email" name="email" placeholder="E-mail">
+                <input class="contact__list-input contact__list-input--email" type="email" id="email" name="email" placeholder="E-mail">
               </li>
             </ul>
             <button class="contact__button button" type="button" name="button">Отправить</button>
@@ -340,35 +340,37 @@
 
       <section class="footer__next">
         <h3 class="footer__headline">Следующие путешествия</h3>
-        <ul class="footer__next-list">
-          <li class="footer__next-list-item">Марсель</li>
-          <li class="footer__next-list-item">Ним</li>
-          <li class="footer__next-list-item">Монпелье</li>
-          <li class="footer__next-list-item">Барселона</li>
-          <li class="footer__next-list-item">Пальма</li>
-        </ul>
-        <ul class="footer__next-list">
-          <li class="footer__next-list-item">Сардиния</li>
-          <li class="footer__next-list-item">Палермо</li>
-          <li class="footer__next-list-item">Катания</li>
-          <li class="footer__next-list-item">Неаполь</li>
-          <li class="footer__next-list-item">Рим</li>
-        </ul>
-        <ul class="footer__next-list">
-          <li class="footer__next-list-item">Корс</li>
-          <li class="footer__next-list-item">Ницца</li>
-          <li class="footer__next-list-item">Монако</li>
-          <li class="footer__next-list-item">Динь-ле-Бен</li>
-          <li class="footer__next-list-item">Гренобль</li>
-        </ul>
+        <div class="footer__next-wrapper">
+          <ul class="footer__next-list">
+            <li class="footer__next-list-item">Марсель</li>
+            <li class="footer__next-list-item">Ним</li>
+            <li class="footer__next-list-item">Монпелье</li>
+            <li class="footer__next-list-item">Барселона</li>
+            <li class="footer__next-list-item">Пальма</li>
+          </ul>
+          <ul class="footer__next-list">
+            <li class="footer__next-list-item">Сардиния</li>
+            <li class="footer__next-list-item">Палермо</li>
+            <li class="footer__next-list-item">Катания</li>
+            <li class="footer__next-list-item">Неаполь</li>
+            <li class="footer__next-list-item">Рим</li>
+          </ul>
+          <ul class="footer__next-list footer__next-list--last">
+            <li class="footer__next-list-item">Корс</li>
+            <li class="footer__next-list-item">Ницца</li>
+            <li class="footer__next-list-item">Монако</li>
+            <li class="footer__next-list-item">Динь-ле-Бен</li>
+            <li class="footer__next-list-item">Гренобль</li>
+          </ul>
+        </div>
       </section>
       <section class="footer__contacts">
         <h3 class="footer__headline">Наши контакты</h3>
         <ul class="footer__contacts-list">
-          <li class="footer__contacts-list-item">
+          <li class="footer__contacts-list-item footer__contacts-list-item--email">
             <a class="footer__contacts-list-link" href="mailto:puteshestviemechta@gmail.ru" target="_blank">puteshestviemechta@gmail.ru</a>
           </li>
-          <li class="footer__contacts-list-item">
+          <li class="footer__contacts-list-item footer__contacts-list-item--phone">
             <a class="footer__contacts-list-link footer__contacts-list-link--phone" href="tel:+749978468446">+7(499)-784-684-46</a>
           </li>
         </ul>
@@ -381,24 +383,24 @@
     </footer>
 
     <div class="modal modal__purchase hidden">
-      <button class="modal__purchase-toggle" type="button" name="button">
-        <svg class="modal__purchase-toggle-close" width="22" height="22">
-          <use xlink:href=""></use>
-        </svg>
-        <span class="visually-hidden">Закрыть попап</span>
-      </button>
       <fieldset class="modal__purchase-fieldset">
+        <button class="modal__purchase-toggle" type="button" name="button">
+          <svg class="modal__purchase-toggle-close" width="22" height="22">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть попап</span>
+        </button>
         <legend class="modal__purchase-legend">
           <p class="modal__purchase-legend-text">Купить тур</p>
         </legend>
         <ul class="modal__purchase-list">
           <li class="modal__purchase-list-item modal__purchase-list-item--phone">
             <label class="modal__purchase-list-label" for="phone"></label>
-            <input class="modal__purchase-list-input" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
+            <input class="modal__purchase-list-input modal__purchase-list-input--phone" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
           </li>
           <li class="modal__purchase-list-item modal__purchase-list-item--email" >
             <label class="modal__purchase-list-label" for="email"></label>
-            <input class="modal__purchase-list-input" type="email" id="email" name="email" placeholder="E-mail">
+            <input class="modal__purchase-list-input modal__purchase-list-input--mail" type="email" id="email" name="email" placeholder="E-mail">
           </li>
         </ul>
         <button class="modal__purchase-button button" type="button" name="button">Отправить</button>
@@ -407,7 +409,7 @@
      <div class="modal modal__success hidden">
        <button class="modal__success-toggle" type="button" name="button">
          <svg class="modal__success-toggle-close" width="22" height="22">
-           <use xlink:href=""></use>
+           <use xlink:href="img/sprite.svg#icon-close"></use>
          </svg>
          <span class="visually-hidden">Закрыть попап</span>
        </button>

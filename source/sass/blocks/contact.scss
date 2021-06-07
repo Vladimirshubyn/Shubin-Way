@@ -1,4 +1,54 @@
-.contact__legend-text {
+.contact {
+  background-color: $white;
+  position: relative;
+  width: 656px;
+  margin-top: 208px;
+  margin-bottom: 240px;
+  margin-left: auto;
+  box-shadow: 3px 3px 3px $dark-opacity;
+  border-radius: 3px;
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 138px;
+    margin-bottom: 80px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin-top: 100px;
+    box-shadow: none;
+  }
+}
+.contact::after {
+  width: 43.958vw;
+  height: 31.042vw;
+  z-index: -1;
+  position: absolute;
+  right: 45%;
+  top: -50px;
+  content: url("../img/sunset-desktop@1x.jpg");
+  @media (resolution: $retina) {
+    background-image: url("../img/sunset-desktop@2x.jpg");
+  }
+  @media (max-width: $tablet-width) {
+    left: -60px;
+    width: 100vw;
+    top: -85px;
+    content: url("../img/sunset-tablet@1x.jpg");
+    @media (resolution: $retina) {
+      background-image: url("../img/sunset-tablet@2x.jpg");
+    }
+  }
+  @media (max-width: $mobile-width) {
+    content: "";
+  }
+}
+.contact__fieldset {
+  background-color: $white;
+  border: none;
+  text-align: center;
+}
+.contact__legend-headline {
+  margin-top: 50px;
   color: $darkest-dark;
   font-weight: 600;
   font-size: 25px;
@@ -30,7 +80,16 @@
     line-height: 24px;
   }
 }
+.contact__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .contact__list-input {
+  border: 2px solid $dark-opacity;
   color: $darkest-dark;
   font-weight: 400;
   font-size: 14px;
@@ -44,5 +103,28 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+  }
+}
+.contact__list-input--phone {
+  padding: 16px 51px 16px 26px;
+  margin-right: 19px;
+  width: 269px;
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.contact__list-input--email {
+  padding: 15px 51px 15px 26px;
+  @media (max-width: $mobile-width) {
+    width: 269px;
+  }
+}
+.contact__button {
+  padding: 18px 40px 18px 40px;
+  margin-top: 25px;
+  margin-bottom: 49px;
+  @media (max-width: $mobile-width) {
+    width: 269px;
   }
 }
