@@ -8,7 +8,7 @@
     margin-bottom: 80px;
   }
   @media (max-width: $mobile-width) {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 }
 .places-tab__info {
@@ -17,20 +17,22 @@
   }
 }
 .places-tab__info-headline {
-  margin-top: 95px;
-  margin-bottom: 0;
+  margin-top: 85px;
+  margin-bottom: 50px;
   position: relative;
   color: $dark;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
   @media (max-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
   }
   @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
@@ -39,7 +41,7 @@
 .places-tab__info-headline::after {
   content: "";
   position: absolute;
-  top: 100px;
+  top: 103px;
   left: 0;
   width: 9.115vw;
   border-bottom: 4px solid $accent-base;
@@ -48,24 +50,38 @@
   }
 }
 .places-tab__info-text {
+  width: 390px;
+  margin-bottom: 47px;
   color: $dark;
   opacity: 0.7;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 726px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
   @media (max-width: $mobile-width) {
+    width: 298px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
 }
 .places-tab__info-button {
-  padding: 30px 40px 30px 40px;
+  width: 248px;
+  padding: 30px 20px 30px 20px;
+  @media (max-width: $tablet-width) {
+    margin-top: 17px;
+    padding: 20px 20px 20px 20px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+    width: 298px;
+  }
 }
 .places-tab__review {
   z-index: 1;
@@ -74,32 +90,42 @@
   margin-top: 194px;
   width: 19.896vw;
   @media (max-width: $tablet-width) {
-    width: 382px;
+    width: 49.740vw;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 40px;
   }
   @media (max-width: $mobile-width) {
+    width: 288px;
+    text-align: center;
+    margin-top: 105px;
     width: 268px;
   }
 }
 .places-tab__review-description {
   background-color: $white;
   padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 .places-tab__review::after {
   width: 22.396vw;
   height: 31.042vw;
   z-index: -1;
   position: absolute;
-  right: 50%;
-  top: -80px;
+  right: 71%;
+  top: -120px;
   @media (max-width: $tablet-width) {
     left: auto;
     right: 200px;
     width: 100%;
     top: -85px;
+  }
+  @media (max-width: $mobile-width) {
+    top: -65px;
+    right: 300px;
   }
 }
 .places-tab__review--greece::after {
@@ -165,6 +191,7 @@
 .places-tab__review-headline {
   position: relative;
   margin: 0;
+  margin-bottom: 35px;
   color: $dark;
   font-weight: 500;
   font-size: 30px;
@@ -183,33 +210,53 @@
 .places-tab__review-headline::after {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 0;
   width: 3.542vw;
   border-bottom: 0.7px solid $accent-base;
   @media (max-width: $tablet-width) {
-
+    width: 8.542vw;
+  }
+  @media (max-width: $mobile-width) {
+    width: 68px;
+    left: 95px;
+    top: 35px;
   }
 }
 .places-tab__review-text {
+  width: 310px;
   color: $dark;
   opacity: 0.7;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
   @media (max-width: $tablet-width) {
+    width: 44.365vw;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
   }
   @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 248px;
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
   }
 }
 .places-tab__review-author {
+  display: flex;
+  align-items: center;
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+.places-tab__review-author-name {
+  margin-top: 25px;
+  margin-left: 15px;
   color: $dark;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -219,6 +266,7 @@
     line-height: 20px;
   }
   @media (max-width: $mobile-width) {
+    margin-left: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;

@@ -1,7 +1,7 @@
 .contact {
   background-color: $white;
   position: relative;
-  width: 656px;
+  width: 646px;
   margin-top: 208px;
   margin-bottom: 240px;
   margin-left: auto;
@@ -9,7 +9,7 @@
   border-radius: 3px;
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    margin-top: 138px;
+    margin-top: 190px;
     margin-bottom: 80px;
   }
   @media (max-width: $mobile-width) {
@@ -23,8 +23,8 @@
   height: 31.042vw;
   z-index: -1;
   position: absolute;
-  right: 45%;
-  top: -50px;
+  right: 49%;
+  top: -70px;
   content: url("../img/sunset-desktop@1x.jpg");
   @media (resolution: $retina) {
     background-image: url("../img/sunset-desktop@2x.jpg");
@@ -32,7 +32,7 @@
   @media (max-width: $tablet-width) {
     left: -60px;
     width: 100vw;
-    top: -85px;
+    top: -70px;
     content: url("../img/sunset-tablet@1x.jpg");
     @media (resolution: $retina) {
       background-image: url("../img/sunset-tablet@2x.jpg");
@@ -44,16 +44,20 @@
 }
 .contact__fieldset {
   background-color: $white;
+  padding-left: 0;
   border: none;
   text-align: center;
 }
 .contact__legend-headline {
   margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 30px;
   color: $darkest-dark;
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
   @media (max-width: $tablet-width) {
+    margin-left: 0;
     font-weight: 600;
     font-size: 25px;
     line-height: 32px;
@@ -66,10 +70,13 @@
 }
 .contact__legend-lead {
   color: $darkest-dark;
+  margin-top: 10px;
+  margin-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   @media (max-width: $tablet-width) {
+    margin-top: 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -82,11 +89,15 @@
 }
 .contact__list {
   margin: 0;
+  margin-left: 25px;
   padding-left: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 .contact__list-input {
   border: 2px solid $dark-opacity;
@@ -106,8 +117,8 @@
   }
 }
 .contact__list-input--phone {
-  padding: 16px 51px 16px 26px;
-  margin-right: 19px;
+  padding: 16px 51px 16px 36px;
+  margin-right: 29px;
   width: 269px;
   @media (max-width: $mobile-width) {
     margin-right: 0;
@@ -116,6 +127,7 @@
 }
 .contact__list-input--email {
   padding: 15px 51px 15px 26px;
+  width: 269px;
   @media (max-width: $mobile-width) {
     width: 269px;
   }
@@ -123,8 +135,15 @@
 .contact__button {
   padding: 18px 40px 18px 40px;
   margin-top: 25px;
-  margin-bottom: 49px;
+  margin-bottom: 39px;
+  margin-left: 20px;
+  width: 173px;
+  @media (max-width: $tablet-width) {
+    margin-top: 18px;
+    width: 256px;
+  }
   @media (max-width: $mobile-width) {
     width: 269px;
+    margin-left: 0;
   }
 }

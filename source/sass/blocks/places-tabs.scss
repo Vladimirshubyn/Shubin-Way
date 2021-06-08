@@ -4,19 +4,21 @@
 .places-tabs__nav-list {
   position: relative;
   width: 46.823vw;
-  margin-top: 97px;
+  margin-top: 73px;
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
   @media (max-width: $tablet-width) {
-    margin-top: 98px;
+    margin-top: 78px;
     width: 117.057vw;
+    margin-left: 20px;
     margin-right: 0;
   }
   @media (max-width: $mobile-width) {
-    margin-top: 40px;
+    margin-top: 23px;
+    margin-left: 0;
     width: 899px;
     margin-right: 0;
   }
@@ -24,7 +26,7 @@
 .places-tabs__nav-list::after {
   content: "";
   position: absolute;
-  top: 65px;
+  top: 60px;
   width: 46.823vw;
   left: 0;
   border-bottom: 1px solid $dark-opacity;

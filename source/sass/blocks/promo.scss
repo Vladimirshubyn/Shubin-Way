@@ -26,20 +26,20 @@
   }
 }
 .promo__headline-wrapper {
-  width: 412px;
+  width: 407px;
   margin-left: auto;
-  margin-right: 22.552vw;
+  margin-right: 22.852vw;
   padding-top: 185px;
   padding-bottom: 296px;
   @media (max-width: $tablet-width) {
-    width: 398px;
+    width: 417px;
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 103px;
+    padding-bottom: 70px;
   }
   @media (max-width: $mobile-width) {
     margin: 0 auto;
-    margin-bottom: 250px;
+    margin-bottom: 310px;
     width: 294px;
     padding-top: 81px;
     padding-bottom: 0;
@@ -47,11 +47,13 @@
 }
 .promo__headline {
   margin: 0;
+  margin-bottom: 30px;
   color: $white;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
@@ -60,17 +62,20 @@
     font-weight: 600;
     font-size: 7.500vw;
     line-height: 36px;
-    padding-bottom: 182px;
+    padding-bottom: 90px;
   }
 }
 .promo__headline-lead {
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 59px;
   color: $white;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
   @media (max-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 437px;
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
@@ -84,13 +89,16 @@
     line-height: 27px;
   }
 }
+.promo__headline-button-wrapper {
+  margin-bottom: 30px;
+}
 .promo__headline-button {
-  width: 340px;
-  padding: 30px 179px 40px 30px;
+  width: 440px;
+  padding: 30px 189px 30px 52px;
   position: relative;
   @media (max-width: $tablet-width) {
-    width: 250px;
-    padding: 19px 107px 19px 40px;
+    width: 258px;
+    padding: 19px 127px 19px 40px;
   }
   @media (max-width: $mobile-width) {
     width: 288px;
@@ -100,7 +108,10 @@
 }
 .promo__headline-button::after {
   position: absolute;
-  left: 80%;
-  top: 35%;
+  left: 84%;
+  top: 36%;
   content: url(../img/icons/icon-arrow.svg);
+  @media (max-width: $tablet-width) {
+    left: 78%;
+  }
 }

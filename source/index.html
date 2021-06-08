@@ -5,6 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Europe</title>
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-100.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-200.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -23,7 +30,7 @@
           </a>
         </div>
         <button class="page__header-toggle" type="button" name="button">
-          <svg class="page__header-toggle-open" width="75" height="50">
+          <svg class="page__header-toggle-open" width="30" height="30">
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
           <svg class="page__header-toggle-close hidden" width="75" height="50">
@@ -41,7 +48,7 @@
               <a class="main-nav__list-link" href="#prices">Цены</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--last">
-              <a class="main-nav__list-link main-nav__list-link--phone" href="tel:+749978468446">+7(499)-784-684-46</a>
+              <a class="main-nav__list-link main-nav__list-link--phone" href="tel:+749978468446">+7 (499)-784-684-46</a>
             </li>
           </ul>
           <ul class="main-nav__list-open hidden">
@@ -78,7 +85,7 @@
           </div>
           <ul class="places__list">
             <li class="places__list-item places__list-item--first">
-              <a class="places__list-link places__list-link--first" href="#">
+              <a class="places__list-link places__list-link--first" href="#places-tab">
                 <picture>
                   <source type="image/webp" media="(max-width: 320px)" srcset="img/content/greece-mobile@1x.webp 1x, img/content/greece-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 768px)" srcset="img/content/greece-tablet@1x.webp 1x, img/content/greece-tablet@2x.webp 2x">
@@ -90,7 +97,7 @@
               </a>
             </li>
             <li class="places__list-item places__list-item--second">
-              <a class="places__list-link places__list-link--second" href="#">
+              <a class="places__list-link places__list-link--second" href="#places-tab">
                 <picture>
                   <source type="image/webp" media="(max-width: 320px)" srcset="img/content/albania-mobile@1x.webp 1x, img/content/albania-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 768px)" srcset="img/content/albania-tablet@1x.webp 1x, img/content/albania-tablet@2x.webp 2x">
@@ -102,7 +109,7 @@
               </a>
             </li>
             <li class="places__list-item places__list-item--third">
-              <a class="places__list-link places__list-link--third" href="#">
+              <a class="places__list-link places__list-link--third" href="#places-tab">
                 <picture>
                   <source type="image/webp" media="(max-width: 320px)" srcset="img/content/macedonia-mobile@1x.webp 1x, img/content/macedonia-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 768px)" srcset="img/content/macedonia-tablet@1x.webp 1x, img/content/macedonia-tablet@2x.webp 2x">
@@ -114,7 +121,7 @@
               </a>
             </li>
             <li class="places__list-item places__list-item--fourth">
-              <a class="places__list-link places__list-link--fourth" href="#">
+              <a class="places__list-link places__list-link--fourth" href="#places-tab">
                 <picture>
                   <source type="image/webp" media="(max-width: 320px)" srcset="img/content/montenegro-mobile@1x.webp 1x, img/content/montenegro-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 768px)" srcset="img/content/montenegro-tablet@1x.webp 1x, img/content/montenegro-tablet@2x.webp 2x">
@@ -126,7 +133,7 @@
               </a>
             </li>
             <li class="places__list-item places__list-item--fifth">
-              <a class="places__list-link places__list-link--fifth" href="#">
+              <a class="places__list-link places__list-link--fifth" href="#places-tab">
                 <picture>
                   <source type="image/webp" media="(max-width: 320px)" srcset="img/content/croatia-mobile@1x.webp 1x, img/content/croatia-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 768px)" srcset="img/content/croatia-tablet@1x.webp 1x, img/content/croatia-tablet@2x.webp 2x">
@@ -145,7 +152,7 @@
             <h3 class="visually-hidden">Навигация по турам</h3>
             <ul class="places-tabs__nav-list">
               <li class="places-tabs__nav-list-item">
-                <a class="places-tabs__nav-list-link" href="#">
+                <a class="places-tabs__nav-list-link" name="places-tab" href="#">
                   <p class="places-tabs__nav-list-link-title places-tabs__nav-list-link-title--active">Греция</p>
                 </a>
               </li>
@@ -187,7 +194,7 @@
                   <p class="places-tab__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <address class="places-tab__review-author">
                     <img class="places-tab__review-author-image" src="img/vlada-avatar.png" alt="Аватар автора">
-                    <p class="places-tab__review-author">Влада Голицина</p>
+                    <p class="places-tab__review-author-name">Влада Голицина</p>
                   </address>
                 </article>
               </div>
@@ -280,7 +287,7 @@
             <p class="prices__headline-description">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
             <p class="prices__headline-appeal">Свяжитесь с нами</p>
             <div class="prices__headline-phone">
-              <a class="prices__headline-phone-link" href="tel:+749978468446">+7(499)-784-684-46</a>
+              <a class="prices__headline-phone-link" href="tel:+749978468446">+7 (499)-784-684-46</a>
             </div>
           </div>
           <div class="prices__offer prices__offer--complex">
@@ -290,7 +297,7 @@
             </div>
             <p class="prices__offer-lead">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
             <ul class="prices__offer-list">
-              <li class="prices__offer-list-item">Разработанный маршрут с гидом группы</li>
+              <li class="prices__offer-list-item prices__offer-list-item--first">Разработанный маршрут с гидом группы</li>
               <li class="prices__offer-list-item">Перелет, трансфер и проживание в отелях</li>
               <li class="prices__offer-list-item">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="prices__offer-list-item">Экскурсии по удивительно красивым местам Европы</li>
@@ -303,12 +310,12 @@
               <p class="prices__offer-headline-price">&#36;1399</p>
             </div>
             <p class="prices__offer-lead">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul class="prices__offer-list">
+            <ul class="prices__offer-list prices__offer-list--budget">
               <li class="prices__offer-list-item">Разработанный маршрут с гидом группы</li>
               <li class="prices__offer-list-item">Перелет и трансфер</li>
               <li class="prices__offer-list-item">Проживание в хостелах при отелях</li>
               <li class="prices__offer-list-item">Только завтраки в отелях</li>
-              <li class="prices__offer-list-item">Экскурсии по удивительно красивым местам Европы</li>
+              <li class="prices__offer-list-item prices__offer-list-item--budget-last">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
             <button class="prices__offer-button button" type="button" name="button">Купить тур сейчас</button>
           </div>
@@ -317,16 +324,16 @@
           <fieldset class="contact__fieldset">
             <legend class="contact__legend">
               <h3 class="contact__legend-headline">У Вас остались вопросы&quest;</h3>
-              <p class="contact__legend-lead">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+              <span class="contact__legend-lead">Оставьте свой номер или e-mail и мы свяжемся с Вами</span>
             </legend>
             <ul class="contact__list">
               <li class="contact__list-item contact__list-item--phone">
-                <label class="contact__list-label" for="phone"></label>
-                <input class="contact__list-input contact__list-input--phone" type="tel" id="phone" name="phone" placeholder="+7 Введите 10 цифр номера">
+                <label class="contact__list-label" for="phone-call"></label>
+                <input class="contact__list-input contact__list-input--phone" type="tel" id="phone-call" name="phone" placeholder="+7 Введите 10 цифр номера">
               </li>
               <li class="contact__list-item contact__list-item--email" >
-                <label class="contact__list-label" for="email"></label>
-                <input class="contact__list-input contact__list-input--email" type="email" id="email" name="email" placeholder="E-mail">
+                <label class="contact__list-label" for="email=call"></label>
+                <input class="contact__list-input contact__list-input--email" type="email" id="email=call" name="email" placeholder="E-mail">
               </li>
             </ul>
             <button class="contact__button button" type="button" name="button">Отправить</button>
@@ -341,14 +348,14 @@
       <section class="footer__next">
         <h3 class="footer__headline">Следующие путешествия</h3>
         <div class="footer__next-wrapper">
-          <ul class="footer__next-list">
+          <ul class="footer__next-list footer__next-list--first">
             <li class="footer__next-list-item">Марсель</li>
             <li class="footer__next-list-item">Ним</li>
             <li class="footer__next-list-item">Монпелье</li>
             <li class="footer__next-list-item">Барселона</li>
             <li class="footer__next-list-item">Пальма</li>
           </ul>
-          <ul class="footer__next-list">
+          <ul class="footer__next-list footer__next-list--second">
             <li class="footer__next-list-item">Сардиния</li>
             <li class="footer__next-list-item">Палермо</li>
             <li class="footer__next-list-item">Катания</li>
@@ -384,15 +391,15 @@
 
     <div class="modal modal__purchase hidden">
       <fieldset class="modal__purchase-fieldset">
+        <legend class="modal__purchase-legend">
+          <span class="modal__purchase-legend-text">Купить тур</span>
+        </legend>
         <button class="modal__purchase-toggle" type="button" name="button">
           <svg class="modal__purchase-toggle-close" width="22" height="22">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
           <span class="visually-hidden">Закрыть попап</span>
         </button>
-        <legend class="modal__purchase-legend">
-          <p class="modal__purchase-legend-text">Купить тур</p>
-        </legend>
         <ul class="modal__purchase-list">
           <li class="modal__purchase-list-item modal__purchase-list-item--phone">
             <label class="modal__purchase-list-label" for="phone"></label>

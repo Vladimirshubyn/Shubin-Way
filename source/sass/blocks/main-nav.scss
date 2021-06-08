@@ -28,6 +28,9 @@
     line-height: 28px;
   }
 }
+.main-nav__list-link:hover {
+  color: $accent-base;
+}
 .main-nav__list-item--first {
   width: 114px;
 }
@@ -35,13 +38,13 @@
   margin-left: 2.083vw;
 }
 .main-nav__list-item--last {
-  width: 194px;
-  margin-left: 4.635vw;
+  width: 200px;
+  margin-left: 5.035vw;
   position: relative;
 }
 .main-nav__list-item--last::before {
   position: absolute;
-  left: -32px;
+  left: -42px;
   content: url("../img/icons/icon-phone.svg");
 }
 .main-nav__list-item--last:hover:before {
