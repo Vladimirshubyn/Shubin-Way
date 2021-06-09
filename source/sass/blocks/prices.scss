@@ -106,6 +106,10 @@
     line-height: 32px;
   }
 }
+.prices__headline-phone-link:hover {
+  color: $accent-base;
+  text-decoration: underline;
+}
 .prices__headline-phone-link::before {
   position: absolute;
   left: -52px;
@@ -129,6 +133,19 @@
   @media (max-width: $mobile-width) {
     width: 288px;
   }
+}
+.prices__offer:hover {
+  border: 1px solid $accent-base;
+}
+.prices__offer:hover .prices__offer-headline,
+.prices__offer:hover .prices__offer-headline-price {
+  color: $accent-base;
+}
+.prices__offer:hover .prices__offer-list-item::before {
+  content: url("../img/icons/icon-check.svg");
+}
+.prices__offer:hover .prices__offer-lead::after {
+  border-bottom: 1px solid $accent-base;
 }
 .prices__offer--complex {
   order: 1;
@@ -295,7 +312,7 @@
 .prices__offer-list-item::before {
   position: absolute;
   left: -32px;
-  content: url("../img/icons/icon-check.svg");
+  content: url("../img/icons/icon-check-orange.svg");
 }
 .prices__offer-button {
   padding: 30px 70px 30px 70px;
